@@ -1,4 +1,4 @@
 # testing
 codecov==2.1.11
 pytest==6.2.2
-
+pytest-cov==2.11

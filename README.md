@@ -34,7 +34,7 @@ python app.py
 # Run Tests Manually
 ``
 pytest test_invoice.py
-
+pytest --cov=./
 ``
 
 
@@ -42,3 +42,4 @@ pytest test_invoice.py
 
 Package to setup upload to codecov with travis
 - https://github.com/codecov/codecov-python
+- https://github.com/codecov/example-python

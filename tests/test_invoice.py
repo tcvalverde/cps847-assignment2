@@ -1,7 +1,6 @@
 import unittest
 
-from invoice import Invoice
-from invoice_item import InvoiceItem
+from app import InvoiceItem, Invoice
 
 
 class TestInvoice(unittest.TestCase):

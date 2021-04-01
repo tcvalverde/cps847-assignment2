@@ -1,5 +1,4 @@
-from invoice_item import InvoiceItem
-from invoice import Invoice
+from app import InvoiceItem, Invoice
 
 if __name__ == '__main__':
     milk = InvoiceItem('milk', 1, 1.23)

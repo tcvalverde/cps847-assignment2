@@ -1,6 +1,6 @@
 from typing import List
 from functools import reduce
-from invoice_item import InvoiceItem
+from app.invoice_item import InvoiceItem
 
 
 class Invoice:
