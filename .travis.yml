@@ -1,25 +1,17 @@
-language:
-  python
+services:
+  - docker
 
-install:
-  - pip install -r requirements.txt
-
-script:
-  - py.test --cov-report term --cov=./
-
-env:
-  - CODECOV_TOKEN=1dd387c2-ef8b-43f8-8bed-f5483f8d759a
-
-after_success:
-  - codecov
+before_install:
+  - docker build -t helloworldimage:v1 .
+  - docker run -d -name helloworld -p 80:80 helloworldimage:v1
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id:
-    secure: "Encrypted <access-key-id>=AKIA5HRW2O2SDJOBWD7N"
-  secret_access_key:
-    secure: "Encypted <secret-access-key>=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"
+  access_key_id: "AKIA5HRW2O2SEI52FZTU"
+  secret_access_key: "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"
   region: "us-east-1"
-  app: "helloworld"
-  env: "Dev01"
-  bucket_name: "the-target-S3-bucket"
+  app: "elastic-beanstalk-tutorial"
+  env: "elastic-beanstalk-tutorial-dev"
+  bucket_name: "elasticbeanstalk-group17"
+  on:
+    branch: main
