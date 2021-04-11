@@ -11,9 +11,9 @@ before_install:
 deploy:
   provider: elasticbeanstalk
   access_key_id: 
-    secure: "Encrypted <access-key-id>=AKIA5HRW2O2SEI52FZTU"
+    secure: "Encrypted AKIA5HRW2O2SEI52FZTU="
   secret_access_key: 
-    secure: "Encypted <secret-access-key>="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"
+    secure: "Encypted g4+Rjl60UQpeTuczPklWVKAa5n8ejb76tqQZJZGz="
   region: "us-east-1"
   app: "HelloWorld"
   env: "Helloworld-env"
