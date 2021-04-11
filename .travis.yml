@@ -3,7 +3,7 @@ services:
 
 before_install:
   - docker build -t helloworldimage:v1 .
-  - docker run -d -name helloworld -p 80:80 helloworldimage:v1
+  - docker run -d --name helloworld -p 80:80 helloworldimage:v1
 
 deploy:
   provider: elasticbeanstalk
@@ -14,4 +14,4 @@ deploy:
   env: "elastic-beanstalk-tutorial-dev"
   bucket_name: "elasticbeanstalk-group17"
   on:
-    branch: main
+    branch: dockerizeContainer
