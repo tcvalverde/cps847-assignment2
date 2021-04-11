@@ -17,6 +17,6 @@ deploy:
   region: "us-east-1"
   app: "HelloWorld"
   env: "Helloworld-env"
-  bucket_name: "elasticbeanstalk-us-east-1"
+  bucket_name: "elasticbeanstalk-us-east-2-909574305444"
   on:
     branch: dockerizeContainer
