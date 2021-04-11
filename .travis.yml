@@ -13,7 +13,7 @@ deploy:
   access_key_id: "AKIA5HRW2O2SEI52FZTU"
   secret_access_key: "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"
   region: "us-east-2"
-  app: "HelloWorldContainer"
+  app: "HelloWorld"
   env: "Helloworld-env"
   bucket_name: "elasticbeanstalk-us-east-2-909574305444"
   on:
