@@ -12,3 +12,14 @@ env:
 
 after_success:
   - codecov
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "Encrypted <access-key-id>=AKIA5HRW2O2SDJOBWD7N"
+  secret_access_key:
+    secure: "Encypted <secret-access-key>=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"
+  region: "us-east-1"
+  app: "helloworld"
+  env: "Dev01"
+  bucket_name: "the-target-S3-bucket"
