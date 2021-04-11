@@ -14,7 +14,7 @@ deploy:
   secret_access_key: "g4+Rjl60UQpeTuczPklWVKAa5n8ejb76tqQZJZGz"
   region: "us-east-2"
   app: "HelloWorldContainer"
-  env: "Helloworld-env"
+  env: "Helloworldcontainer-env"
   bucket_name: "elasticbeanstalk-us-east-2-909574305444"
   on:
     branch: dockerizeContainer
