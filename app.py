@@ -1,17 +1,10 @@
-from app import InvoiceItem, Invoice
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return render_template('index.html')
 
 if __name__ == '__main__':
-    milk = InvoiceItem('milk', 1, 1.23)
-    chocolate = InvoiceItem('chocolate', 1, 3.45)
-    eggs = InvoiceItem('eggs', 3, 3.00)
-
-    invoice_items = [milk, chocolate, eggs]
-
-    invoice = Invoice(
-        items=invoice_items,
-        tax=0.13,
-        discount=0.0
-    )
-
-    print(f"invoice total: {invoice.total()}")
-
+    app.run(debug=True, host="0.0.0.0")
