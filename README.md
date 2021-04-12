@@ -3,7 +3,7 @@ Usage of a variety of CI-CD tools and Cloud services
 
 # Group 17 Members
 
-- Alize De Matas
+- Alize De 
 - Jasmine
 - Sauban Sakhi
 - Syed Abdullah
